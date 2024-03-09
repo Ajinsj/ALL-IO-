@@ -1,0 +1,60 @@
+/* reg.css */
+
+/* Style for the heading */
+.h2-reg {
+    text-align: center;
+    color: #2d0baa; /* Dark gray color */
+}
+
+/* Style for the registration form container */
+.reg-col {
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding around the form */
+    border: 1px solid #d8c5ce; /* Add a border with light gray color */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #d6cbcb; /* Light gray background color */
+}
+
+/* Style for form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for form fields */
+form input[type="text"],
+form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the submit button */
+
+.btn-reg {
+    text-align: center;
+    /* Add styles for positioning, padding, etc. */
+}
+
+/* Style for the button */
+.btns {
+    background-color: #007bff; /* Blue color, you can change it to your preferred color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 16px; /* Adjust font size */
+}
+
+/* Hover effect */
+.btns:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+.existing-account {
+    text-align: center;
+    margin-top: 15px;
+    
+}

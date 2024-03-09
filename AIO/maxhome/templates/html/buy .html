@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Pay Payment</title>
+</head>
+<body>
+
+<button id="google-pay-button" class="button">Pay with Google Pay</button>
+
+<script>
+document.getElementById("google-pay-button").addEventListener("click", function() {
+  // Replace '9600431195' with your Google Pay number
+  var gpayNumber = '9600431195';
+  
+  // Redirect URL after payment (replace 'success-page-url' with your actual success page URL)
+  var redirectUrl = 'success-page-url';
+  
+  // Replace 'Buy via Google Pay to 9600431195' with your desired message
+  var message = 'Buy via Google Pay to ' + gpayNumber;
+  
+  // Log the message to console, you can replace this with any other action you want
+  console.log(message);
+  
+  // Redirect the user to the specified URL after they click the button
+  window.location.href = redirectUrl;
+});
+</script>
+
+</body>
+</html>

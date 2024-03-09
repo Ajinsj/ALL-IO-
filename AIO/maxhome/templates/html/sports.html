@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ALL IO | Search here dude |Home</title>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+<!-- custom css file link -->
+<link rel="stylesheet" href="static\css\catagoris.css">
+</head>
+<body>
+  
+  
+
+
+   <!-- header section starts -->
+<header>
+  <div class="header-1">
+      <a href="home" class="logo">&#8592; Sports Products</a>
+      <a class="srch">&#128269;</a>
+      <div class="search">  
+      <input class="inp" id="searchInput" placeholder="search">
+      
+      </div>
+      
+      
+      <a class="xmark" onclick="cancelSearch()">&#xd7;</a>
+
+      <div class="icons">
+      
+       <div class="heart"> <a href="#" class="fa fa-microphone"></a></div>
+       <div class="circle"> <a href="account" class="fas fa-camera"></a></div>
+      </div>
+   
+       
+  </div>
+ 
+
+      
+    
+ 
+  </div>
+</header>
+<section>
+  <div class="acces">
+
+    <div class="myacces">
+      <div class="acces img1">
+      <img height="400" src="static\images\todaysports.jpg" style="width:100%">
+      </div>
+    </div>
+  </section> 
+
+
+<script>
+    function cancelSearch() {
+        document.getElementById("searchInput").value = ""; // Clear the input field
+    }
+</script>
+
+<!-- datas get from database section starts -->
+
+<section>
+   
+
+  <center><h1 class="img-heading">Latest Launches</h1></center>
+
+
+ </section>
+
+<section>
+
+  {% for i in sports  %}
+  
+      
+          
+  <div class="product_imgs">  
+    
+             
+    <img  height="220px" width="220px" src="{{i.product_image.url}}" class="img" >
+    <button class="buy">buy</button>
+    <a href="#" class="card-text">{{i.description}}</a>
+   
+      
+  </div>  
+                           
+  
+
+                                                                     
+  
+{% endfor %}
+</section>
